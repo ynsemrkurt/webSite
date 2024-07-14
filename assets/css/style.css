@@ -485,11 +485,8 @@ textarea{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--second-color);
+    background: linear-gradient(to right ,var(--third-color), var(--second-color));
     color: var(--color-white);
-}
-.form-button>.btn:hover{
-    background: #00B5E7;
 }
 .form-button i{
     font-size: 18px;
