@@ -213,7 +213,7 @@ nav{
     margin-top: 5em;
     gap: 30px;
 }
-.icon{
+.icon i{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,9 +223,20 @@ nav{
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 }
-.icon:hover{
-    color: var(--first-color);
+
+.icon .uil-instagram:hover {
+    background-color: #E1306C;
+    color: #ffffff /* Instagram rengi */
 }
+.icon .uil-linkedin-alt:hover {
+    background-color: #0077B5; /* LinkedIn rengi */
+    color: #ffffff;
+}
+.icon .uil-github-alt:hover {
+    background-color: #333; /* GitHub rengi */
+    color: #ffffff;
+}
+
 
 /* ----- FEATURED IMAGE BOX ----- */
 .featured-image{
