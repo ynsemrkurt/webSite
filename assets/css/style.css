@@ -236,6 +236,10 @@ nav{
     background-color: #333; /* GitHub rengi */
     color: #ffffff;
 }
+.icon .uil-medium-m:hover{
+    background-color: #333; /* GitHub rengi */
+    color: #ffffff;
+}
 
 
 /* ----- FEATURED IMAGE BOX ----- */
