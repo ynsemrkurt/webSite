@@ -115,3 +115,36 @@ sections.forEach(current =>{
 }
 
 window.addEventListener('scroll', scrollActive)
+
+//project box
+
+document.addEventListener('DOMContentLoaded', function() {
+  const projects = document.querySelectorAll('.project-box');
+  projects.forEach(project => {
+      project.addEventListener('click', function() {
+          const projectName = project.getAttribute('name');
+          let url = '';
+          switch(projectName) {
+              case 'guvenli-pati':
+                  url = 'https://github.com/ynsemrkurt/GuvenliPati';
+                  break;
+              case 'turkish-identfies-control':
+                  url = 'https://github.com/ynsemrkurt/turkishIdentifiesControl';
+                  break;
+              case 'firebase-chat-app':
+                  url = 'https://github.com/ynsemrkurt/chatAPP';
+                  break;
+              case 'astrologer':
+                  url = 'https://github.com/ynsemrkurt/Astrologer';
+                  break;
+              case 'medicine-reminder':
+                  url = 'https://github.com/ynsemrkurt/MedicineReminder';
+                  break;
+              case 'github-repo':
+                  url = 'https://github.com/ynsemrkurt?tab=repositories';
+                  break;
+          }
+          window.location.href = url;
+      });
+  });
+});

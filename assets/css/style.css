@@ -59,6 +59,9 @@ html{
     border-radius: 10px;
     cursor: pointer;
     transition: .4s;
+    color: var(--text-color-second);
+    text-decoration: none;
+    font-size: small;
 }
 .btn>i{
     margin-left: 10px;
@@ -346,7 +349,7 @@ h3{
 .about-btn{
     margin-top: 8px;
 }
-.about-btn button{
+.about-btn a{
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -384,6 +387,7 @@ h3{
     flex-wrap: wrap;
 }
 .project-box{
+    cursor: pointer;
     position: relative;
     display: flex;
     justify-content: center;
@@ -401,7 +405,7 @@ h3{
     color: black;
     margin-bottom: 25px;
 }
-.project-box label{
+.project-box p{
     font-size: 14px;
     color: #777;
     padding-left: 32px;
@@ -417,14 +421,28 @@ h3{
     transition: .4s;
     z-index: 1;
 }
+
+#git::after{
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    background: #000000;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    z-index: 1;
+}
+
 .project-box:hover.project-box::after,
-.contact-info:hover.contact-info::after{
+.contact-info:hover.contact-info::after,
+#git:hover#git::after{
     bottom: 0;
 }
 .project-box:hover.project-box img,
 .project-box:hover.project-box>h3,
 .project-box:hover.project-box>h1,
-.project-box:hover.project-box>label{
+.project-box:hover.project-box>p,
+.project-box:hover.project-box>i{
     color: var(--color-white);
     z-index: 2;
 }
